@@ -5,16 +5,33 @@
     <meta charset='utf-8' />
     <title>Leo Uhlig Personal Website</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
     <style>
 
-      div {
+      div, h1{
         margin: 20px;
+      }
+
+      header {
+        background-image: url("files/33C9224F-0FEB-491C-85E8-C55C719C2D34_1_102_o.jpeg");
+        margin-top: 0px;
       }
       
       body{
         margin: 0;
         padding: 0;
+        font-family: "Open Sans";
       }
+
+      .Bio {
+        display: flex; 
+        align-items: top center;   
+        gap: 15px;   
+      }
+
       ul {
         list-style-type: none;
         margin: 0;
@@ -45,6 +62,7 @@
   <body>
 
     <header id="header">
+      <!--<img src = "files/33C9224F-0FEB-491C-85E8-C55C719C2D34_1_102_o.jpeg", alt="Portland Skyline" width="1000" height="300">-->
       <nav class="links">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -54,11 +72,13 @@
       </nav>
     </header>
 
-    <div>
-      <h1>
-        Leo Uhlig
-      </h1>
-      <img src="files/36a_0315.jpeg" alt="Leo Uhlig" width="400", height="300">
+    <h1>
+      Leo Uhlig
+    </h1>
+
+
+    <div class = "Bio">
+      <img src="files/36a_0315.jpeg" alt="Leo Uhlig" width="300", height="300">
       <p>
         I am a Undergraduate Student majoring in Data Science and Geography at the university of Oregon. 
       </p>
