@@ -15,8 +15,8 @@
         margin: 20px;
       }
 
+
       header {
-        background-image: url("files/33C9224F-0FEB-491C-85E8-C55C719C2D34_1_102_o.jpeg");
         margin-top: 0px;
       }
       
@@ -29,7 +29,19 @@
       .Bio {
         display: flex; 
         align-items: top center;   
-        gap: 15px;   
+        justify-content: center;  
+        width: 60%;
+        margin: 0 auto;
+        gap: 15px; 
+        padding-bottom: 15px;
+        padding-top: 15px;
+      }
+
+      .contact-panel {
+        display: grid;
+        justify-content: center;
+        align-items: center; 
+        text-align: center;
       }
 
       ul {
@@ -56,13 +68,18 @@
         background-color: #111111;
       }
 
+      .banner img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+          display: block;
+      }
+
     </style>
   </head>
 
   <body>
-
     <header id="header">
-      <!--<img src = "files/33C9224F-0FEB-491C-85E8-C55C719C2D34_1_102_o.jpeg", alt="Portland Skyline" width="1000" height="300">-->
       <nav class="links">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -72,18 +89,25 @@
       </nav>
     </header>
 
-    <h1>
-      Leo Uhlig
-    </h1>
+      <h1 class = "Bio">
+        Leo Uhlig
+      </h1>
 
 
-    <div class = "Bio">
-      <img src="files/36a_0315.jpeg" alt="Leo Uhlig" width="300", height="300">
-      <p>
-        I am a Undergraduate Student majoring in Data Science and Geography at the university of Oregon. 
-      </p>
-    </div>
-    
+      <div class = "Bio">
+        <img src="files/36a_0315.jpeg" alt="Leo Uhlig" width="300", height="300" style="border-radius: 10%;">
+        <p>
+          I am a Undergraduate Student majoring in Data Science and Geography at the university of Oregon.
+        </p>
+      </div>
+
+      <hr style="width: 60%; margin: 0 auto; fill: black;">
+
+      <div class="contact-panel">
+        <h4>Get in contact with me</h4>
+        <p>EMAIL: leo.r.uhlig@gmail.com | GITHUB: luhlig123</p>
+      </div>
+  
     <script>
   
         
