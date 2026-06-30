@@ -26,15 +26,15 @@
         font-family: "Open Sans";
       }
 
+
       .Bio {
-        display: flex; 
-        align-items: top center;   
-        justify-content: center;  
-        width: 60%;
+        display: flexbox;
+        justify-content: center;
+        align-items: center; 
+        text-align: center;
+        width: 50%;
         margin: 0 auto;
-        gap: 15px; 
-        padding-bottom: 15px;
-        padding-top: 15px;
+        padding-bottom: 40px;
       }
 
       .contact-panel {
@@ -66,6 +66,7 @@
 
       ul li a:hover {
         background-color: #111111;
+        transform: scale(1.025);
       }
 
       .banner img {
@@ -73,6 +74,22 @@
           height: 300px;
           object-fit: cover;
           display: block;
+      }
+
+      .image-link:hover {
+        transform: scale(1.025);
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+      }
+
+      .row {
+        display: flex;
+        background-color: #eee;
+        border-radius: 20px;
+      }
+
+      .column {
+        flex: 33.33%;
+        padding: 5px;
       }
 
     </style>
@@ -91,12 +108,10 @@
       </nav>
     </header>
 
-      <h1 class = "Bio">
-        Leo Uhlig
-      </h1>
-
-
       <div class = "Bio">
+        <h1>
+          Leo Uhlig
+        </h1>
         <img src="files/36a_0315.jpeg" alt="Leo Uhlig" width="300", height="300" style="border-radius: 10%;">
         <p>
           I am a recent graduate with a bachelor's degree in data science and geography from the University of Oregon.
@@ -104,6 +119,31 @@
             In my time at UO I have studied a broad range of topics including machine learning, web-mapping, GIS related analysis, and spatial demography.
              As I approach graduation this spring, I look forward to using these skills to make differences in my community.
         </p>
+      </div>
+
+      <div class = "Bio">
+        <h3>
+          Explore My Work
+        </h3>
+        <div class="row">
+
+          <div class="column">
+            <h4>Spatial Demography</h4>
+            <a href="portfolio.html"><img class = "image-link" src="files/portfolio_figs/portland_income_fig.png" alt="Lost Hiker Search Suggestions" style="width:100%; border-radius:20px"></a>
+          </div>
+
+          <div class="column">
+            <h4>Web Mapping</h4>
+            <a href="webmapping.html"><img class = "image-link" src="files/thumbnails/yellowstone_thumb.png" alt="Lost Hiker Search Suggestions" style="width:100%; border-radius:20px"></a>
+          </div>
+
+          <div class="column">
+            <h4>Map Gallery</h4>
+            <a href="mapgallery.html"><img class = "image-link" src="files/map_gallery/WNF_SearchSuggestions.png" alt="Lost Hiker Search Suggestions" style="width:100%; border-radius:20px"></a>
+          </div>
+
+        </div>
+        
       </div>
 
       <hr style="width: 60%; margin: 0 auto; fill: black;">
