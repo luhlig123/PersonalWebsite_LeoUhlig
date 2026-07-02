@@ -8,91 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="files/styles/personal_site_styles.css">
 
-    <style>
-
-      div, h1{
-        margin: 20px;
-      }
-
-
-      header {
-        margin-top: 0px;
-      }
-      
-      body{
-        margin: 0;
-        padding: 0;
-        font-family: "Open Sans";
-      }
-
-
-      .Bio {
-        display: flexbox;
-        justify-content: center;
-        align-items: center; 
-        text-align: center;
-        width: 50%;
-        margin: 0 auto;
-        padding-bottom: 40px;
-      }
-
-      .contact-panel {
-        display: grid;
-        justify-content: center;
-        align-items: center; 
-        text-align: center;
-      }
-
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0px, 40px;
-        overflow: hidden;
-        background-color: #333333;
-      }
-
-      ul li{
-        float: left;
-      }
-
-      ul li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-
-      ul li a:hover {
-        background-color: #111111;
-        transform: scale(1.025);
-      }
-
-      .banner img {
-          width: 100%;
-          height: 300px;
-          object-fit: cover;
-          display: block;
-      }
-
-      .image-link:hover {
-        transform: scale(1.025);
-        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
-      }
-
-      .row {
-        display: flex;
-        background-color: #eee;
-        border-radius: 20px;
-      }
-
-      .column {
-        flex: 33.33%;
-        padding: 5px;
-      }
-
-    </style>
   </head>
 
   <body>
@@ -121,25 +38,31 @@
         </p>
       </div>
 
-      <div class = "Bio">
+      <div class = "Bio" style="width: 80%;">
         <h3>
           Explore My Work
         </h3>
         <div class="row">
 
           <div class="column">
-            <h4>Spatial Demography</h4>
-            <a href="portfolio.html"><img class = "image-link" src="files/portfolio_figs/portland_income_fig.png" alt="Lost Hiker Search Suggestions" style="width:100%; border-radius:20px"></a>
+            <div class="image-link">
+              <h4>Spatial Demography</h4>
+              <a href="portfolio.html"><img class = "image-link" src="files/portfolio_figs/portland_income_fig.png" alt="Lost Hiker Search Suggestions" style="width:100%; border-radius:20px"></a>
+            </div>
           </div>
 
           <div class="column">
-            <h4>Web Mapping</h4>
-            <a href="webmapping.html"><img class = "image-link" src="files/thumbnails/yellowstone_thumb.png" alt="Lost Hiker Search Suggestions" style="width:100%; border-radius:20px"></a>
+            <div class = "image-link">
+              <h4>Web Mapping</h4>
+              <a href="webmapping.html"><img class = "image-link" src="files/thumbnails/yellowstone_thumb.png" alt="Lost Hiker Search Suggestions" style="width:100%; border-radius:20px"></a>
+            </div>
           </div>
 
           <div class="column">
-            <h4>Map Gallery</h4>
-            <a href="mapgallery.html"><img class = "image-link" src="files/map_gallery/WNF_SearchSuggestions.png" alt="Lost Hiker Search Suggestions" style="width:100%; border-radius:20px"></a>
+            <div class = "image-link">
+              <h4>Map Gallery</h4>
+              <a href="mapgallery.html"><img class = "image-link" src="files/map_gallery/WNF_SearchSuggestions.png" alt="Lost Hiker Search Suggestions" style="width:100%; border-radius:20px"></a>
+            </div>
           </div>
 
         </div>
