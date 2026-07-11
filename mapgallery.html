@@ -14,15 +14,23 @@
 
   <body>
     <header id="header">
-        <!--<img src = "files/33C9224F-0FEB-491C-85E8-C55C719C2D34_1_102_o.jpeg", alt="Portland Skyline" width="1000" height="300">-->
         <nav class="links">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="files/LEO UHLIG RESUME (7).pdf">CV</a></li>
             <li><a href="portfolio.html">Spatial Demography Portfolio</a></li>
             <li><a href="webmapping.html">Webmapping Portfolio</a></li>
+            <li><a href="DSCI.html">Data Science Portfolio</a></li>
             <li><a href="mapgallery.html">Map Gallery</a></li>
           </ul>
+        </nav>
+
+        <nav class="links">
+            <ul style="background-color: #444;">
+                <li><a href="#E-Scooter">E-Scooter Suitability</a></li>
+                <li><a href="#Hiker">Lost Hiker</a></li>
+                <li><a href="#Schools">Salem School Network</a></li>
+            </ul>
         </nav>
       </header>
     
@@ -31,61 +39,86 @@
             Map Gallery
         </h1>
         <!--E-scooter-->
-        <h2>
+        <h2 id="E-Scooter">
             E-Scooter Parking Suitability in Eugene
         </h2>
+
+        <button onclick="window.location.href='#header';">Return to Menu</button>
+
         <h3>
             Suitability Map
         </h3>
-        <img src="files/map_gallery/EScooter_map.png" alt="E-Scooter Suitability Map" width="50%">
-                          
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/map_gallery/EScooter_map.png" alt="E-Scooter Suitability Map" width="50%" class="image-link">
+        </label>                  
         <h3>
             Suitability Sub-models
         </h3>
-        <img src="files/map_gallery/EScooter_submodels.png" alt="E-Scooter Sub-models" width="50%">
-                          
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/map_gallery/EScooter_submodels.png" alt="E-Scooter Sub-models" width="50%" class="image-link">
+        </label>                  
 
         <hr style="width: 60%; margin: 0 auto; fill: black;">
         <!--Lost hiker-->
-        <h2>
+        <h2 id="Hiker">
             Lost Hiker Search Areas
         </h2>
+
+        <button onclick="window.location.href='#header';">Return to Menu</button>
+        
         <h3>
             Search Area Base Map
         </h3>
-        <img src="files/map_gallery/WNF_SearchArea.png" alt="WNF search area map" width="80%">
-                          
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/map_gallery/WNF_SearchArea.png" alt="WNF search area map" width="80%" class="image-link">
+        </label>                  
         <h3>
             Cost Distance Models
         </h3>
-        <img src="files/map_gallery/WNF_CostDistance_plots.png" alt="Cost distance models" width="80%">
-                          
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/map_gallery/WNF_CostDistance_plots.png" alt="Cost distance models" width="80%" class="image-link">
+        </label>                  
         <h3>
             Lost Hiker Search Suggestions
         </h3>
-        <img src="files/map_gallery/WNF_SearchSuggestions.png" alt="Lost Hiker Search Area Suggestions" width="80%">
-                          
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/map_gallery/WNF_SearchSuggestions.png" alt="Lost Hiker Search Area Suggestions" width="80%" class="image-link">
+        </label>                  
 
         <hr style="width: 60%; margin: 0 auto; fill: black;">
         <!--Salem Street Network-->
-        <h2>
+        <h2 id = "Schools">
             Salem Middle School Street Networks
         </h2>
+        
+        <button onclick="window.location.href='#header';">Return to Menu</button>
+        
         <h3>
             Salem Middle School Service Areas
         </h3>
-        <img src="files/map_gallery/Salem_service_areas.png" alt="Salem middle school service area map" width="80%">
-                          
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/map_gallery/Salem_service_areas.png" alt="Salem middle school service area map" width="80%" class="image-link">
+        </label>                  
         <h3>
             Salem Middle School 4-Minute Street Network
         </h3>
-        <img src="files/map_gallery/Salem_4min_street_network.png" alt="Salem 4-min street network" width="80%">
-                          
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/map_gallery/Salem_4min_street_network.png" alt="Salem 4-min street network" width="80%" class="image-link">
+        </label>                  
         <h3>
             Judson Middle School Service Area
         </h3>
-        <img src="files/map_gallery/judson.png" alt="Judson Middle school service area" width="80%">
-                          
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/map_gallery/judson.png" alt="Judson Middle school service area" width="80%" class="image-link">
+        </label>                  
 
     </div>
 

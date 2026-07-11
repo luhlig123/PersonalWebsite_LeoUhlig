@@ -15,13 +15,13 @@
   <body>
 
     <header id="header">
-      <!--<img src = "files/33C9224F-0FEB-491C-85E8-C55C719C2D34_1_102_o.jpeg", alt="Portland Skyline" width="1000" height="300">-->
       <nav class="links">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="files/LEO UHLIG RESUME (7).pdf">CV</a></li>
           <li><a href="portfolio.html">Spatial Demography Portfolio</a></li>
           <li><a href="webmapping.html">Webmapping Portfolio</a></li>
+          <li><a href="DSCI.html">Data Science Portfolio</a></li>
           <li><a href="mapgallery.html">Map Gallery</a></li>
         </ul>
       </nav>
@@ -40,7 +40,10 @@
         <h3>
           Population of The Portland Metro Area
         </h3>
-        <img src="files/portfolio_figs/portland_pop_fig.png" alt="Portland Metro Area Population Figures" width="90%">
+        <label class="zoom-box">
+          <input type="checkbox">
+          <img src="files/portfolio_figs/portland_pop_fig.png" alt="Portland Metro Area Population Figures" width="90%" class="image-link">
+        </label>
         <p>
           The Portland metropolitan area consists of seven counties located in Oregon and Washington. 
           With a population of 650,000 people, Portland is the largest city in Oregon.
@@ -54,7 +57,11 @@
         <h3>
           Median Income in Portland
         </h3>
-        <img src="files/portfolio_figs/portland_income_fig.png" alt="Portland Income Figures" width="90%">
+        <label class="zoom-box">
+          <input type="checkbox">
+          <img src="files/portfolio_figs/portland_income_fig.png" alt="Portland Income Figures" width="90%" class="image-link">
+        </label>
+
         <p>
           The overall median income in the Portland metro area sits around $91,000 per year. 
           Looking tract by tract, we can see higher incomes located closer to the city center with some tracts reaching as high as a median $200,000 per year. 
@@ -65,7 +72,11 @@
         <h3>
           Median Home Value in Portland
         </h3>
-        <img src="files/portfolio_figs/portland_home_val_fig.png" alt="Portland Median Home Value Figures" width="90%">
+        <label class="zoom-box">
+          <input type="checkbox">
+          <img src="files/portfolio_figs/portland_home_val_fig.png" alt="Portland Median Home Value Figures" width="90%" class="image-link">
+        </label>
+        
         <p>
           Similar patterns in income can be observed while investigating median home values in the Portland metro area. 
           Here we can see overall higher home values near the urban center of the metro area with some tracts reaching as high a median home value of $1,000,000. 

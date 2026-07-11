@@ -2,7 +2,6 @@
     margin: 20px;
   }
 
-
   header {
     margin-top: 0px;
   }
@@ -68,16 +67,38 @@
     /*box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);*/
   }
 
-  .row {
-    display: flex;
+  .content-bubble {
+    display: flexbox;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
     background-color: #eee;
     border-radius: 20px;
+  }
+
+  .row {
+    display: flex;
     width: 100%;
   }
 
   .column {
     flex: 33.33%;
     padding: 5px;
+  }
+
+  .zoom-box input[type = "checkbox"]{
+    display: none;
+  }
+
+  .zoom-box img {
+      cursor: zoom-in;
+  }
+
+  .zoom-box input[type = "checkbox"]:checked ~ img {
+    transform: scale(1.75);
+    cursor: zoom-out;
   }
 
   .portfolio {
