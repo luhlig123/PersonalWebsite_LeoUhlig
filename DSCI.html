@@ -231,6 +231,78 @@
             Results
         </h2>
 
+        <h3>
+            Overall Pre-Analysis Trends
+        </h3>
+
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/DSCI_410/ALL_VOLUME.png" alt="Overall Volume Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+        </label>     
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/DSCI_410/ALL_PROPORTIONS.png" alt="Overall Proportion Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+        </label>     
+
+        <p style="padding-top: 15px;"> 
+            Prior to carrying out any formal analysis, there are a handful of important trends that can be observed in the data. 
+            Looking first at volume in Eugene, it can be seen that the EPD handles by far the most calls, typically floating around 
+            10,000 calls per month. It can also be seen that CAHOOTS typically handled around 2000 monthly calls at their peak in 
+            Eugene. In 2024, the initial rollout of MCSLC took place. This figure shows call volumes around 400 calls per month. 
+            By comparison, Springfield takes fewer calls overall than Eugene, but shows similar patterns in terms of volume. 
+            In Springfield The SPD takes around 4000 calls per month, CAHOOTS takes around 400 calls per month, and MCSLC takes 
+            around 50 calls per month.
+        </p>
+        <p style="padding-bottom: 15px;">
+            While call volume gives a good sense of the overall numbers, it is difficult to see the immediate effect of the CAHOOTS
+             closure in Eugene. Shifting focus to monthly call proportions, another side of the story can be observed. When looking 
+             at call proportion, it becomes clear how similar the trends between Eugene and Springfield actually are. In both cities, 
+             the proportion of calls handled by the EPD/SPD stays mostly in the mid 80s to mid 90s, while the proportion of calls 
+             handled by CAHOOTS show a slow rise in proportion up to about 17% at their peak. In both cities, MCSLC appears to stay 
+             below 5% of monthly calls. By far the most important finding from this figure is the clear increase in EPD calls immediately 
+             following the closure of CAHOOTS in Eugene.
+        </p>
+
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/DSCI_410/report_visualizations/AGENCY_DID/EPD_VOL_DID.png" alt="EPD and SPD Volume Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+        </label>     
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/DSCI_410/report_visualizations/AGENCY_DID/EPD_PROP_DID.png" alt="EPD and SPD Proportion Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+        </label>     
+
+        <p style="padding-top: 15px;">
+            After running DiD analysis on the overall volumes and proportions of EPD and SPD calls, some of the 
+            observations above can be seen more clearly. In terms of volume, there doesn’t appear to be much of 
+            a change following the closure of CAHOOTS in Eugene. In fact, we can see that the effect of the closure 
+            was not statistically significant, with a p-value of 0.247. Call proportion on the other hand shows a significant
+             leap of about 9% in Eugene immediately following the closure. Compared to the roughly 2% increase in Springfield, 
+             these results suggest a significant shift in service. Additionally, this effect turned out to be statistically 
+             significant, with a p-value below 0.000. 
+        </p>
+
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/DSCI_410/report_visualizations/AGENCY_DID/MCSLC_VOL_DID.png" alt="MCSLC DiD Volume Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+        </label>     
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/DSCI_410/report_visualizations/AGENCY_DID/MCSLC_PROP_DID.png" alt="MCSLC DiD Proportion Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+        </label>
+
+        <p>
+            Switching focus to MCSLC, it is immediately clear that the volumes and proportions are much lower than those of the 
+            EPD and SPD. In Eugene, there is an increase of roughly 300 monthly calls post CAHOOTS closure and about a 
+            2% increase in terms of proportion. 
+        </p>
+        <p>
+            In Springfield, there is a very slight increase in volume of around 50 calls per month and only about a 
+            0.5% increase in terms of proportion. This is likely due to the overall lower figures in Springfield as 
+            well as the fact that CAHOOTS remains operational in the city.
+        </p>
+
+
         <!--Discussion and Next Steps SETCTION-->
 
         <h2>
