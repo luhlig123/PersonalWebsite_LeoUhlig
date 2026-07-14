@@ -92,64 +92,138 @@
         </p>
 
         <br>
-        <div class="content-bubble" style="padding-left: 10px; padding-right: 10px;">
-            <h4>
-                Eugene CAD Data:
-            </h4>
+    </div>
 
-            <p>
-                This dataset contains information on 911 calls made in Eugene. For this project, information 
-                regarding primary units, call times, and call types for each record will be used. This information will 
-                make it possible to identify call volume trends for the Eugene Police Department as well as for CAHOOTS.
-            </p>
+    <div class="content-bubble" style="padding-left: 10px; padding-right: 10px; width: 80%;">
+        
+        <div class="row">
+            <div class="column">
+                <h4>
+                    Eugene CAD Data:
+                </h4>
 
-            <p>
-                One area of concern in this dataset is inconsistency in naming conventions for prime units and call types from year to year. 
-                This increases the probability of accidentally omitting chunks of information at different stages of analysis. 
-            </p>
+                <p>
+                    This dataset contains information on 911 calls made in Eugene. For this project, information 
+                    regarding primary units, call times, and call types for each record will be used. This information will 
+                    make it possible to identify call volume trends for the Eugene Police Department as well as for CAHOOTS.
+                </p>
 
-            <br>
-            <h4>
-                SPD Calls for Service
-            </h4>
+                <p>
+                    One area of concern in this dataset is inconsistency in naming conventions for prime units and call types from year to year. 
+                    This increases the probability of accidentally omitting chunks of information at different stages of analysis. 
+                </p>
+            </div>
+            <div class="column">
+                <h4>
+                    SPD Calls for Service:
+                </h4>
 
-            <p>
-                This dataset contains information on 911 calls and dispatches in the city of Springfield. 
-                Information on primary responding units, call times, and call types for each record will be used to 
-                analyze call volumes for the Springfield Police Department as well as for CAHOOTS.
-            </p>
+                <p>
+                    This dataset contains information on 911 calls and dispatches in the city of Springfield. 
+                    Information on primary responding units, call times, and call types for each record will be used to 
+                    analyze call volumes for the Springfield Police Department as well as for CAHOOTS.
+                </p>
 
-            <p>
-                Similarly to the Eugene CAD data, inconsistencies in primary unit and call type naming conventions could prove to be an issue. 
-            </p>
-
-            <br>
-            <h4>
-                MCSLC Calls 
-            </h4>
-
-            <p>
-                This dataset will provide information on calls made to MCSLC from 2024 to 2025. 
-                information on call times and call types will be used to analyze call volumes in Eugene and Springfield.
-            </p>
-            <p>
-                One major hurdle to consider while working with this dataset is the fact that multiple call types are listed for each record. 
-                This greatly increases the likelihood of missing difficult to classify edge cases while looking into specific call types. 
-                Additionally, the fact that this dataset covers a significantly shorter time frame compared to the 911 data for Eugene and 
-                Springfield. This could potentially weaken the validity of any comparisons made across datasets.
-            </p>
+                <p>
+                    Similarly to the Eugene CAD data, inconsistencies in primary unit and call type naming conventions could prove to be an issue. 
+                </p>
+            </div>
         </div>
+        <div class="row">
+            <div class="column" style="padding-inline: 25%;">
+                <h4>
+                    MCSLC Calls: 
+                </h4>
 
+                <p>
+                    This dataset will provide information on calls made to MCSLC from 2024 to 2025. 
+                    information on call times and call types will be used to analyze call volumes in Eugene and Springfield.
+                </p>
+                <p>
+                    One major hurdle to consider while working with this dataset is the fact that multiple call types are listed for each record. 
+                    This greatly increases the likelihood of missing difficult to classify edge cases while looking into specific call types. 
+                    Additionally, the fact that this dataset covers a significantly shorter time frame compared to the 911 data for Eugene and 
+                    Springfield. This could potentially weaken the validity of any comparisons made across datasets.
+                </p>
+            </div>
+        </div>
+    </div>
 
-        <h3>
-            Data Preperation and Cleaning
-        </h3>
+        
+    <div class="portfolio">
+            <h3>
+                Data Preperation and Cleaning
+            </h3>
+
+            <p>
+                1. Read each dataset into a jupyter notebook as a data frame <br><br><br>
+
+                2. Create a simplified date column for the three data frames that represent the year and month of every call recorded (ex. 2022-03). 
+                This will make aggregation easier during the following steps <br><br><br>
+
+                3. Subset MCSLC data into Eugene and Springfield dataframes using the “City” column variables. <br><br><br>
+
+                4. Use known CAHOOTS unit codes to subset the Eugene and Springfield emergency call data frames into EPD, SPD, and CAHOOTS data frames. <br><br><br>
+
+                5. Group the CAHOOTS dataframes by call type and sort by count to identify the most commonly occurring call types. <br><br><br>
+
+                6. Create total monthly call volume data frames for Eugene and Springfield <br><br><br>
+
+                7. Use the values in the monthly call volume data frames to calculate the proportion of monthly calls handled by each agency in each city. <br><br><br>
+            </p>
 
         <!--METHODS SETCTION-->
 
         <h2>
             Methods
         </h2>
+
+        <h3>
+            Initial Visualization and Exploratory Analysis           
+        </h3>
+        <p>
+            1. Create visualizations of overall trends in volume and proportion across cities and agencies using seaborn and matplotlib. <br><br>
+
+            2. Create visualizations of agency specific trends in both cities <br><br>
+
+            3. Create call type specific plots to show trends across cities <br><br>
+        </p>
+
+        <h3>
+            Overall Difference in Differences for EPD/SPD and MCSLC
+        </h3>
+
+        <p>
+            For each agency pair (EPD/SPD, MCSLC in Eugene/Springfield): <br><br>
+
+            1. Check for parallel trends <br><br>
+
+            2. Assign treated and post variables <br><br>
+
+            3. Fit DiD models using statsmodel <br><br>
+
+            4. Assess the statistical significance of the model based its p-values <br><br>
+
+            5. Create visualizations <br><br>
+        </p>
+
+        <h3>
+            Call Type Specific Difference in Differences
+        </h3>
+
+        <p>
+            For each common call type (Check Welfare, Public Assist, Suicidal Subject, Intoxicated Subject, Transport): <br><br>
+
+            1. Check for parallel trends <br><br>
+
+            2. Assign treated and post variables <br><br>
+
+            3. Fit DiD models using statsmodel <br><br>
+
+            4. Assess the statistical significance of the model based its p-values <br><br>
+
+            5. Create visualizations <br><br>
+        </p>
 
         <!--RESULTS SETCTION-->
 
@@ -184,7 +258,7 @@
             with a higher degree of confidence in the data.
         </p>
 
-      </div>
+    </div>
 
     
     <script>
