@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <title>Leo Uhlig Personal Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="files/styles/personal_site_styles.css">
+
+  </head>
+
+  <body id="home">
+
+    <header id="header">
+        <nav class="navbar">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="files/LEO UHLIG RESUME (9).pdf">CV</a></li>
+            <li><a href="#SpatialDemography">Spatial Demography Portfolio</a></li>
+            <li><a href="#WebMapping">Webmapping Portfolio</a></li>
+            <li><a href="#DSCI">Data Science Portfolio</a></li>
+            <li><a href="#MapGallery">Map Gallery</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class = "Bio">
+        <h1>
+          Leo Uhlig
+        </h1>
+        <img src="files/36a_0315.jpeg" alt="Leo Uhlig" width="300", height="300" style="border-radius: 10%;">
+        <p>
+          I am a recent graduate with a bachelor's degree in data science and geography from the University of Oregon.
+           My studies have helped me develop an appreciation for using technology to solve complex problems and make data driven inferences.
+            In my time at UO I have studied a broad range of topics including machine learning, web-mapping, GIS related analysis, and spatial demography.
+             As I approach graduation this spring, I look forward to using these skills to make differences in my community.
+        </p>
+      </div>
+
+      <!--EXPLORE MY WORK BUBBLE-->
+      <h3 class="Bio">
+        Explore My Projects
+      </h3>
+      <div class = "content-bubble">
+        <div class="row">
+
+          <!--spatial demography-->
+          <div class="column">
+            <div class="image-link">
+              <button class="return-button" onclick="window.location.href='#SpatialDemography';" style="margin-bottom: 10px;">
+                Spatial Demography
+              </button>
+              <a href="#SpatialDemography"><img class = "image-link" src="files/portfolio_figs/portland_income_fig.png" alt="Lost Hiker Search Suggestions" style="width:100%; border-radius:20px;"></a>
+            </div>
+          </div>
+
+          <!--web mapping-->
+          <div class="column">
+            <div class = "image-link">
+              <button class="return-button" onclick="window.location.href='#WebMapping';" style="margin-bottom: 10px;">
+                Web Mapping
+              </button>
+              <a href="#WebMapping"><img class = "image-link" src="files/thumbnails/yellowstone_thumb.png" alt="Lost Hiker Search Suggestions" style="width:100%; border-radius:20px;"></a>
+            </div>
+          </div>
+        
+          <!--data science-->
+          <div class="column">
+            <div class = "image-link">
+              <button class="return-button" onclick="window.location.href='#DSCI';" style="margin-bottom: 10px;">
+                Data Science
+              </button>
+              <a href="#DSCI"><img class = "image-link" src="files/DSCI_410/EPD_SPD_CALL_PROPS.png" alt="Lost Hiker Search Suggestions" style="width:100%; border-radius:20px;"></a>
+            </div>
+          </div>  
+
+          <!--map gallery-->
+          <div class="column">
+            <div class = "image-link">
+              <button class="return-button" onclick="window.location.href='#MapGallery';" style="margin-bottom: 10px;">
+                Map Gallery
+              </button>
+              <a href="#MapGallery"><img class = "image-link" src="files/map_gallery/WNF_SearchSuggestions.png" alt="Lost Hiker Search Suggestions" style="width:100%; border-radius:20px;"></a>
+            </div>
+          </div>
+        </div>
+      </div>      
+
+      <!--<hr style="width: 60%; margin: 0 auto; fill: black;">-->
+
+      <!--SPATIAL DEMOGRAPHY PORTFOLIO-->
+      <div class = "portfolio" id="SpatialDemography">
+        <h1>
+          Spatial Demography
+        </h1>
+
+        <!--portland portfolio-->
+        <h2>
+          Income and Home Values in Portland, Oregon
+        </h2>
+
+        <h3>
+          Population of The Portland Metro Area
+        </h3>
+        <label class="zoom-box">
+          <input type="checkbox">
+          <img src="files/portfolio_figs/portland_pop_fig.png" alt="Portland Metro Area Population Figures" width="90%" class="image-link">
+        </label>
+        <p>
+          The Portland metropolitan area consists of seven counties located in Oregon and Washington. 
+          With a population of 650,000 people, Portland is the largest city in Oregon.
+          The figure above to the left shows the population distribution in the metro area by census tract. 
+          We can see clusters of high and low population interspersed throughout the region, 
+          with the majority of high population tracts located near the city center. 
+          After classifying tracts into population density classes, this pattern is easier to detect. 
+          The figure above to the right clearly identifies an urban and suburban core, surrounded by exurban zones. 
+        </p>
+
+        <h3>
+          Median Income in Portland
+        </h3>
+        <label class="zoom-box">
+          <input type="checkbox">
+          <img src="files/portfolio_figs/portland_income_fig.png" alt="Portland Income Figures" width="90%" class="image-link">
+        </label>
+
+        <p>
+          The overall median income in the Portland metro area sits around $91,000 per year. 
+          Looking tract by tract, we can see higher incomes located closer to the city center with some tracts reaching as high as a median $200,000 per year. 
+          Referencing the population figures above, we can see that most of these higher income areas line up with urban and suburban zones. 
+          Expanding outward to look at rural and exurban zones, we can see higher frequencies of tracts with lower median incomes.
+        </p>
+
+        <h3>
+          Median Home Value in Portland
+        </h3>
+        <label class="zoom-box">
+          <input type="checkbox">
+          <img src="files/portfolio_figs/portland_home_val_fig.png" alt="Portland Median Home Value Figures" width="90%" class="image-link">
+        </label>
+        
+        <p>
+          Similar patterns in income can be observed while investigating median home values in the Portland metro area. 
+          Here we can see overall higher home values near the urban center of the metro area with some tracts reaching as high a median home value of $1,000,000. 
+          Moving out from the city center and moving toward the rural and exurban zones, 
+          we can see the majority of median home values tapering off and sitting in between $250,000 and $500,000. 
+          Looking at the breakdown of home values by county, we can see that Clackamas, 
+          Washington and Multnomah County all have noticeably higher median home values than other counties in the metro area. 
+          This can likely be explained by the fact that these three counties make up the majority of the urban and suburban zones in the area, 
+          while Clark, Skamania, Yamhill, and Columbia County make up the majority of the rural and exurban zones.  
+        </p>
+      </div>
+      
+
+      <hr style="width: 70%; margin: 20 auto; fill: black;">
+
+      <!--WEB MAPPING PORTFOLIO-->
+      <div class="portfolio" id="WebMapping">
+        <h1>
+          Web Mapping
+       </h1>
+       <h2>
+        Hillsboro to Yellowstone
+       </h2>
+       <p>
+        The purpose of this map is to serve as a travel guide for anyone intending to drive from Hillsboro, 
+        Oregon to Yellowstone National Park in Wyoming. There are three main routes that a traveller could choose from while planning a trip of this nature, 
+        each with their own unique attractions and places of interest. Given the differences between each route, 
+        a typical traveller may want to weigh the options of one route against another. 
+        One possible way to accomplish this goal would be to use an interactive web map that allows for quick reference across multiple routes. 
+        In this case, the page consists of two main components.The first component is the main map, 
+        which displays the three routes and markers for each point of interest. The second component is a navigation panel that displays all 
+        the possible points on each route and allows the user easy navigation to each marker.  
+        This would allow a user to browse road trip stops in an intuitive and easy to process manner. 
+       </p>
+
+       <button class="return-button" onclick="window.location.href='https://luhlig123.github.io/WebMapping/final_project/structure/Yellowstone.html';">
+        Visit the full page here
+      </button>
+
+      </div>
+      <div class="webmap">
+        <iframe class="webmap" name="my-inline-frame" src="https://luhlig123.github.io/WebMapping/final_project/structure/Yellowstone.html" width="100%" height="700" title="Embedded Content"></iframe>
+      </div>
+
+      <div style="padding-bottom: 10px;"></div>
+
+      <hr style="width: 70%; margin: 20 auto; fill: black;">
+
+      <!--DSCI PORTFOLIO-->
+      <div class="portfolio" id="DSCI">
+        <h1>
+            Data Science
+        </h1>
+        <h2>
+            Call Volumes and Proportions for Mobile Crisis Response In Eugene and Springfield, Oregon
+        </h2>
+
+        <button class="return-button" onclick="window.location.href='https://github.com/luhlig123/DataScienceInAction';">
+            Full GitHub link here
+        </button>
+
+
+        <!--BACKGROUND AND MOTIVATION SETCTION-->
+        <h2>
+            Background and Motivation
+        </h2>
+
+        <p>
+            In recent years, Eugene has undergone two major changes in city-wide mental health and crisis care response.
+             First, the rollout of MCSLC as an alternative crisis care service in 2024 and Second, 
+             the closure of CAHOOTS in Eugene in 2025. Together, these changes in service fundamentally altered the mechanisms 
+             used by citizens of Eugene to access emergency mental health care. Given the magnitude of Eugene’s shift in service 
+             and the significant differences between the CAHOOTS and MCSLC models in terms of operation and dispatch procedure, 
+             many questions have been raised regarding what effect these changes have had on the city
+        </p>
+
+        <br>
+
+        <div class="content-bubble" style="padding-left: 10px; padding-right: 10px;">    
+            <h4>In this project, the following questions will be explored:</h4>
+
+            <br>
+            
+            <p>- How have call volumes and proportions historically been  distributed between the EPD/SPD, CAHOOTS, and MCSLC?</p>
+            
+            <p>- What effect did the closure of CAHOOTS in Eugene have on these volumes and proportions?</p>
+            
+            <p>- How were the volumes and proportions of the most common call types handled by CAHOOTS impacted by the closure?</p>
+        </div>
+        
+        
+        <p>
+            By analyzing call volumes and proportions it is possible to investigate how the public has responded 
+            to this change in service. Taking into account how rapid the transition from CAHOOTS to MCSLC has been, 
+            it is critical to understand how the public has reacted to the change and if an acceptable form of alternative 
+            care is still present in Eugene. Understanding this transition can help build an understanding of what is currently 
+            working well and where areas that need improvement might be.
+        </p>
+
+        <br>
+
+        <!--DATA SETCTION-->
+
+        <h2>
+            Data
+        </h2>
+
+        <p>
+            In order to study call volume and proportion in Eugene and Springfield, three main data sources were required. 
+            All data used in this project was drawn from public record and provided by Dr. Rori Rohlfs.
+        </p>
+
+        <br>
+    </div>
+
+    <div class="content-bubble" style="padding-left: 10px; padding-right: 10px; width: 80%;">
+        
+        <div class="row">
+            <div class="column">
+                <h4>
+                    Eugene CAD Data:
+                </h4>
+
+                <p>
+                    This dataset contains information on 911 calls made in Eugene. For this project, information 
+                    regarding primary units, call times, and call types for each record will be used. This information will 
+                    make it possible to identify call volume trends for the Eugene Police Department as well as for CAHOOTS.
+                </p>
+
+                <p>
+                    One area of concern in this dataset is inconsistency in naming conventions for prime units and call types from year to year. 
+                    This increases the probability of accidentally omitting chunks of information at different stages of analysis. 
+                </p>
+            </div>
+            <div class="column">
+                <h4>
+                    SPD Calls for Service:
+                </h4>
+
+                <p>
+                    This dataset contains information on 911 calls and dispatches in the city of Springfield. 
+                    Information on primary responding units, call times, and call types for each record will be used to 
+                    analyze call volumes for the Springfield Police Department as well as for CAHOOTS.
+                </p>
+
+                <p>
+                    Similarly to the Eugene CAD data, inconsistencies in primary unit and call type naming conventions could prove to be an issue. 
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column" style="padding-inline: 25%;">
+                <h4>
+                    MCSLC Calls: 
+                </h4>
+
+                <p>
+                    This dataset will provide information on calls made to MCSLC from 2024 to 2025. 
+                    information on call times and call types will be used to analyze call volumes in Eugene and Springfield.
+                </p>
+                <p>
+                    One major hurdle to consider while working with this dataset is the fact that multiple call types are listed for each record. 
+                    This greatly increases the likelihood of missing difficult to classify edge cases while looking into specific call types. 
+                    Additionally, the fact that this dataset covers a significantly shorter time frame compared to the 911 data for Eugene and 
+                    Springfield. This could potentially weaken the validity of any comparisons made across datasets.
+                </p>
+            </div>
+        </div>
+    </div>
+
+        
+    <div class="portfolio">
+            <h3>
+                Data Preperation and Cleaning
+            </h3>
+
+            <p>
+                1. Read each dataset into a jupyter notebook as a data frame <br><br><br>
+
+                2. Create a simplified date column for the three data frames that represent the year and month of every call recorded (ex. 2022-03). 
+                This will make aggregation easier during the following steps <br><br><br>
+
+                3. Subset MCSLC data into Eugene and Springfield dataframes using the “City” column variables. <br><br><br>
+
+                4. Use known CAHOOTS unit codes to subset the Eugene and Springfield emergency call data frames into EPD, SPD, and CAHOOTS data frames. <br><br><br>
+
+                5. Group the CAHOOTS dataframes by call type and sort by count to identify the most commonly occurring call types. <br><br><br>
+
+                6. Create total monthly call volume data frames for Eugene and Springfield <br><br><br>
+
+                7. Use the values in the monthly call volume data frames to calculate the proportion of monthly calls handled by each agency in each city. <br><br><br>
+            </p>
+
+        <!--METHODS SETCTION-->
+
+        <h2>
+            Methods
+        </h2>
+
+        <h3>
+            Initial Visualization and Exploratory Analysis           
+        </h3>
+        <p>
+            1. Create visualizations of overall trends in volume and proportion across cities and agencies using seaborn and matplotlib. <br><br>
+
+            2. Create visualizations of agency specific trends in both cities <br><br>
+
+            3. Create call type specific plots to show trends across cities <br><br>
+        </p>
+
+        <h3>
+            Overall Difference in Differences for EPD/SPD and MCSLC
+        </h3>
+
+        <p>
+            For each agency pair (EPD/SPD, MCSLC in Eugene/Springfield): <br><br>
+
+            1. Check for parallel trends <br><br>
+
+            2. Assign treated and post variables <br><br>
+
+            3. Fit DiD models using statsmodel <br><br>
+
+            4. Assess the statistical significance of the model based its p-values <br><br>
+
+            5. Create visualizations <br><br>
+        </p>
+
+        <h3>
+            Call Type Specific Difference in Differences
+        </h3>
+
+        <p>
+            For each common call type (Check Welfare, Public Assist, Suicidal Subject, Intoxicated Subject, Transport): <br><br>
+
+            1. Check for parallel trends <br><br>
+
+            2. Assign treated and post variables <br><br>
+
+            3. Fit DiD models using statsmodel <br><br>
+
+            4. Assess the statistical significance of the model based its p-values <br><br>
+
+            5. Create visualizations <br><br>
+        </p>
+
+        <!--RESULTS SETCTION-->
+
+        <h2>
+            Results
+        </h2>
+
+        <h3>
+            Pre-Analysis Trends
+        </h3>
+
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/DSCI_410/ALL_VOLUME.png" alt="Overall Volume Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+        </label>     
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/DSCI_410/ALL_PROPORTIONS.png" alt="Overall Proportion Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+        </label>     
+
+        <p style="padding-top: 15px;"> 
+            Prior to carrying out any formal analysis, there are a handful of important trends that can be observed in the data. 
+            Looking first at volume in Eugene, it can be seen that the EPD handles by far the most calls, typically floating around 
+            10,000 calls per month. It can also be seen that CAHOOTS typically handled around 2000 monthly calls at their peak in 
+            Eugene. In 2024, the initial rollout of MCSLC took place. This figure shows call volumes around 400 calls per month. 
+            By comparison, Springfield takes fewer calls overall than Eugene, but shows similar patterns in terms of volume. 
+            In Springfield The SPD takes around 4000 calls per month, CAHOOTS takes around 400 calls per month, and MCSLC takes 
+            around 50 calls per month.
+        </p>
+        <p style="padding-bottom: 15px;">
+            While call volume gives a good sense of the overall numbers, it is difficult to see the immediate effect of the CAHOOTS
+             closure in Eugene. Shifting focus to monthly call proportions, another side of the story can be observed. When looking 
+             at call proportion, it becomes clear how similar the trends between Eugene and Springfield actually are. In both cities, 
+             the proportion of calls handled by the EPD/SPD stays mostly in the mid 80s to mid 90s, while the proportion of calls 
+             handled by CAHOOTS show a slow rise in proportion up to about 17% at their peak. In both cities, MCSLC appears to stay 
+             below 5% of monthly calls. By far the most important finding from this figure is the clear increase in EPD calls immediately 
+             following the closure of CAHOOTS in Eugene.
+        </p>
+
+        <br>
+        <h3>
+            Overall Difference in Differences Analysis
+        </h3>
+
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/DSCI_410/report_visualizations/AGENCY_DID/EPD_VOL_DID.png" alt="EPD and SPD Volume Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+        </label>     
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/DSCI_410/report_visualizations/AGENCY_DID/EPD_PROP_DID.png" alt="EPD and SPD Proportion Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+        </label>     
+
+        <p style="padding-top: 15px;">
+            After running DiD analysis on the overall volumes and proportions of EPD and SPD calls, some of the 
+            observations above can be seen more clearly. In terms of volume, there doesn’t appear to be much of 
+            a change following the closure of CAHOOTS in Eugene. In fact, we can see that the effect of the closure 
+            was not statistically significant, with a p-value of 0.247. Call proportion on the other hand shows a significant
+             leap of about 9% in Eugene immediately following the closure. Compared to the roughly 2% increase in Springfield, 
+             these results suggest a significant shift in service. Additionally, this effect turned out to be statistically 
+             significant, with a p-value below 0.000. 
+        </p>
+
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/DSCI_410/report_visualizations/AGENCY_DID/MCSLC_VOL_DID.png" alt="MCSLC DiD Volume Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+        </label>     
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/DSCI_410/report_visualizations/AGENCY_DID/MCSLC_PROP_DID.png" alt="MCSLC DiD Proportion Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+        </label>
+
+        <p>
+            Switching focus to MCSLC, it is immediately clear that the volumes and proportions are much lower than those of the 
+            EPD and SPD. In Eugene, there is an increase of roughly 300 monthly calls post CAHOOTS closure and about a 
+            2% increase in terms of proportion. 
+        </p>
+        <p>
+            In Springfield, there is a very slight increase in volume of around 50 calls per month and only about a 
+            0.5% increase in terms of proportion. This is likely due to the overall lower figures in Springfield as 
+            well as the fact that CAHOOTS remains operational in the city.
+        </p>
+
+        <br>
+        <h3>
+            Call Type Specific Difference in Differences Analysis
+        </h3>
+
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/DSCI_410/CALL_TYPE_VOL_DIF.png" alt="Call Type Volume Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+        </label>     
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/DSCI_410/CALL_TYPE_PROP_DIFF.png" alt="Call Type Proportion Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+        </label>
+
+        <p>
+            After breaking down each data set by call type, more specific trends become apparent. 
+            Broadly speaking, there is quite a bit of a variance here in terms of parallel trends and statistical significance. 
+        </p>
+
+
+        <!--WELFARE CHECKS-->
+
+        <h4>
+            Welfare Checks
+        </h4>
+        <div class="row" style="width: 100%;">
+            <div class="column">
+                <label class = "zoom-box">
+                    <input type = "checkbox">
+                    <img src="files/DSCI_410/report_visualizations/WELFARE/EPD_WELFARE_VOL_DID.png" alt="Welfare Check Volume Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+                </label>  
+            </div>
+
+            <div class="column">
+                <label class = "zoom-box">
+                    <input type = "checkbox">
+                    <img src="files/DSCI_410/report_visualizations/WELFARE/EPD_WELFARE_PROP_DID.png" alt="Welfare Check Proportion Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+                </label>  
+            </div>
+        </div>
+
+        <p>
+            Check welfare calls for the EPD saw by far the biggest increase in terms of volume at 261 more calls per month. 
+            Additionally, the proportion of EPD welfare check calls increased by about 0.56.
+        </p>
+
+        <!--ASSIST PUBLIC-->
+
+        <h4>
+            Assist Public
+        </h4>
+        <div class="row" style="width: 100%;">
+            <div class="column">
+                <label class = "zoom-box">
+                    <input type = "checkbox">
+                    <img src="files/DSCI_410/report_visualizations/ASSIST_PUBLIC/EPD_ASSIST_VOL_DID.png" alt="Assist Public Volume Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+                </label>  
+            </div>
+
+            <div class="column">
+                <label class = "zoom-box">
+                    <input type = "checkbox">
+                    <img src="files/DSCI_410/report_visualizations/ASSIST_PUBLIC/EPD_ASSIST_PROP_DID.png" alt="Assist Public Proportion Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+                </label>  
+            </div>
+        </div>
+
+        <p>
+            Assist public calls for the EPD saw a more modest increase in volume of only 10 more monthly calls, 
+            but saw a significant jump of 0.84 in terms of proportion. While the DiD results for volume were not 
+            statistically significant, its p-value of 0.06 is still fairly close to the typical threshold of 0.05.
+        </p>
+
+        <!--TRANSPORT-->
+
+        <h4>
+            Transport
+        </h4>
+        <div class="row" style="width: 100%;">
+            <div class="column">
+                <label class = "zoom-box">
+                    <input type = "checkbox">
+                    <img src="files/DSCI_410/report_visualizations/TRANSPORT/EPD_TRANSPORT_VOL_DID.png" alt="Transport Volume Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+                </label>  
+            </div>
+
+            <div class="column">
+                <label class = "zoom-box">
+                    <input type = "checkbox">
+                    <img src="files/DSCI_410/report_visualizations/TRANSPORT/EPD_TRANSPORT_PROP_DID.png" alt="Transport Proportion Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+                </label>  
+            </div>
+        </div>
+
+        <p>
+            Transport calls handled by the EPD decreased by about 6 calls per month, but increased by 0.92 in 
+            terms of proportion. It’s important to note here that while the change in proportion for transport 
+            calls was statistically significant with a p-value below 0.000, the change in volume was not significant 
+            with a p-value of 0.49.
+        </p>
+
+        <!--INXOTICATED SUBJECT-->
+
+        <h4>
+            Intoxicated Subject
+        </h4>
+        <div class="row" style="width: 100%;">
+            <div class="column">
+                <label class = "zoom-box">
+                    <input type = "checkbox">
+                    <img src="files/DSCI_410/report_visualizations/INTOXICATED/EPD_INTOX_VOL_DID.png" alt="Intoxicated Subject Volume Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+                </label>  
+                <label class = "zoom-box">
+                    <input type = "checkbox">
+                    <img src="files/DSCI_410/report_visualizations/INTOXICATED/MCSLC_INTOX_VOL_DID.png" alt="Intoxicated Subject Volume Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+                </label>  
+            </div>
+
+            <div class="column">
+                <label class = "zoom-box">
+                    <input type = "checkbox">
+                    <img src="files/DSCI_410/report_visualizations/INTOXICATED/EPD_INTOX_PROP_DID.png" alt="Intoxicated Proportion Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+                </label>  
+                <label class = "zoom-box">
+                    <input type = "checkbox">
+                    <img src="files/DSCI_410/report_visualizations/INTOXICATED/MCSLC_INTOX_PROP_DID.png" alt="Intoxicated Proportion Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+                </label> 
+            </div>
+        </div>
+
+        <p>
+            Intoxicated subject calls handled by the EPD saw little change in volume, with a decrease of about 3 
+            calls per month. The EPD also saw a 0.31 increase in proportion for calls of this nature. That being 
+            said, neither volume or proportion for Intoxicated subject calls were deemed statistically significant. 
+            MCSLC saw an increase of about 4 calls for intoxicated subjects and a change in proportion of about 0.25. 
+            While the change in volume was not statistically significant here, the change in proportion was statistically 
+            significant.
+        </p>
+
+        <!--SUICIDAL SUBJECT-->
+
+        <h4>
+            Suicidal Subject
+        </h4>
+        <div class="row" style="width: 100%;">
+            <div class="column">
+                <label class = "zoom-box">
+                    <input type = "checkbox">
+                    <img src="files/DSCI_410/report_visualizations/SUICIDAL/EPD_SUICIDAL_VOL_DID.png" alt="Suicidal Subject Volume Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+                </label>  
+                <label class = "zoom-box">
+                    <input type = "checkbox">
+                    <img src="files/DSCI_410/report_visualizations/SUICIDAL/MCSLC_SUICIDAL_VOL_DID.png" alt="Suicidal Subject Volume Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+                </label>  
+            </div>
+
+            <div class="column">
+                <label class = "zoom-box">
+                    <input type = "checkbox">
+                    <img src="files/DSCI_410/report_visualizations/SUICIDAL/EPD_SUICIDAL_PROP_DID.png" alt="SUicidal Subject Proportion Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+                </label>  
+                <label class = "zoom-box">
+                    <input type = "checkbox">
+                    <img src="files/DSCI_410/report_visualizations/SUICIDAL/MCSLC_SUICIDAL_PROP_DID.png" alt="SUicidal Subject Proportion Trends" width="100%" class="image-link" style="border: 1px solid #ddd;;">
+                </label> 
+            </div>
+        </div>
+
+        <p>
+            Suicidal subject calls for the EPD saw an increase of around 18 calls per month and an increase of about 0.2 
+            in proportion. Both volume and proportion were statistically significant for the EPD. MCSLC saw an increase of 
+            33 monthly calls and an increase of 0.22 in terms of proportion. While MCSLC’s change in volume was statistically 
+            significant, its change in proportion was not statistically significant.
+        </p>
+
+        
+
+        <!--Discussion and Next Steps SETCTION-->
+
+        <h2>
+            Discussion and Next Steps
+        </h2>
+
+        <p>
+            With all this mind, there are some significant caveats to consider with this project. 
+            The biggest area of concern is the lack of data regarding MCSLC. 
+            Given that at the time of this project there is only about a year's worth of available data to work with, 
+            it’s difficult to say for sure how stable the trends observed really are. If this same analysis were to be 
+            carried out 5 years from now, the results might be more reliable.
+        </p>
+
+        <p>
+            Additionally, the differences in call type classification across agencies makes accurate 
+            comparisons difficult to achieve. While overall trends could potentially yield accurate insight, 
+            getting into specific call types introduces a lot more opportunity for errors and inaccuracy. 
+        </p>
+
+        <p>
+            This project could likely be improved by shifting away from specific call types and looking at 
+            more generalizable variables such as call outcomes(ex. arrest, stayed in community). By focussing 
+            on variables with more clearly defined bounds, it would be easier to make assumptions and insights 
+            with a higher degree of confidence in the data.
+        </p>
+
+    </div>
+
+    <hr style="width: 70%; margin: 20 auto; fill: black;">
+
+    <!--MAP GALLERY-->
+    <div class="portfolio" id="MapGallery">
+        <h1>
+            Map Gallery
+        </h1>
+        <nav class="links">
+            <ul style="background-color: #444;">
+                <li><a href="#E-Scooter">E-Scooter Suitability</a></li>
+                <li><a href="#Hiker">Lost Hiker</a></li>
+                <li><a href="#Schools">Salem School Network</a></li>
+            </ul>
+        </nav>
+        <!--E-scooter-->
+        <h2 class="map" id="E-Scooter">
+            E-Scooter Parking Suitability in Eugene
+        </h2>
+
+        <p>
+            The purpose of this project was to determine the the most suitible locations to place E-scooter ride-share hubs in Eugene, 
+            Oregon. Using three suitability sub-models (Eugene zoning,  population density, and exsiting bike friendly street networks)  
+            it was possible to construct a weighted raster overlay. This approach makes it possible to take multiple variables into 
+            account while selecting E-scooter hub locations.
+        </p>
+
+        <h3>
+            Suitability Map
+        </h3>
+        
+        <div class="row">
+            <div class="column">
+                <label class = "zoom-box">
+                    <input type = "checkbox">
+                    <img src="files/map_gallery/EScooter_map.png" alt="E-Scooter Suitability Map" width="100%" class="image-link">
+                </label>
+            </div>
+            <div class="column">
+                <label class = "zoom-box">
+                    <input type = "checkbox">
+                    <img src="files/map_gallery/EScooter_submodels.png" alt="E-Scooter Sub-models" width="100%" class="image-link">
+                </label> 
+            </div>
+        </div>                
+
+        <p>
+            The map on the left represents the final product of this project. Here, the zones with the high placement suitability
+            scores are represented in green and the zones with the low scores are represented in red. The map on the right represents 
+            each of sub-models used to calculate placement suitability. 
+        </p>
+                
+
+        <hr style="width: 60%; margin: 0 auto; fill: black;">
+        <!--Lost hiker-->
+
+        <br>  
+
+        <h2 class="map" id="Hiker">
+            Lost Hiker Search Areas
+        </h2>
+
+        <p>
+            The goal for this project was to create a set a of maps that could serve as reference material for a search and rescue team.
+            In this scenario, a hiker went missing while trekking toward Camelot Lake. Using elevation data, road and trail networks, and 
+            land cover information, it is possible to suggest where a rescue team should start within the search area.
+        </p>
+
+        <h3>
+            Search Area Base Map
+        </h3>
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/map_gallery/WNF_SearchArea.png" alt="WNF search area map" width="80%" class="image-link">
+        </label>       
+        
+        <p>
+            This map gives a sense of the search area before running any intesive analysis. It shows the hiker's starting postion and goal 
+            location (Camelot Lake), as well as nearby road and trail networks and waterbodies. This is all information that can contribute 
+            to future search suggestions.
+        </p>
+        
+        <h3>
+            Cost Distance Models
+        </h3>
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/map_gallery/WNF_CostDistance_plots.png" alt="Cost distance models" width="80%" class="image-link">
+        </label>                  
+        <h3>
+            Lost Hiker Search Suggestions
+        </h3>
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/map_gallery/WNF_SearchSuggestions.png" alt="Lost Hiker Search Area Suggestions" width="80%" class="image-link">
+        </label>                  
+
+        <hr style="width: 60%; margin: 0 auto; fill: black;">
+        <!--Salem Street Network-->
+        
+        <br>
+
+        <h2 class="map" id="Schools">
+            Salem Middle School Street Networks
+        </h2>
+        
+        
+        
+        <h3>
+            Salem Middle School Service Areas
+        </h3>
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/map_gallery/Salem_service_areas.png" alt="Salem middle school service area map" width="80%" class="image-link">
+        </label>                  
+        <h3>
+            Salem Middle School 4-Minute Street Network
+        </h3>
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/map_gallery/Salem_4min_street_network.png" alt="Salem 4-min street network" width="80%" class="image-link">
+        </label>                  
+        <h3>
+            Judson Middle School Service Area
+        </h3>
+        <label class = "zoom-box">
+            <input type = "checkbox">
+            <img src="files/map_gallery/judson.png" alt="Judson Middle school service area" width="80%" class="image-link">
+        </label>                  
+
+    </div>
+
+
+    <hr style="width: 70%; margin: 20 auto; fill: black;">
+    <div class="contact-panel">
+        <h4>Get in contact with me</h4>
+        <p>EMAIL: leo.r.uhlig@gmail.com | GITHUB: luhlig123</p>
+    </div>
+
+
+
+    <script>
+  
+        
+    </script>
+
+  </body>
+  
+</html>
