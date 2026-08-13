@@ -8,7 +8,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="files/styles/personal_site_styles.css">
 
@@ -29,17 +29,25 @@
         </nav>
       </header>
 
-      <div class = "Bio">
-        <h1>
-          Leo Uhlig
-        </h1>
-        <img src="files/36a_0315.jpeg" alt="Leo Uhlig" width="300", height="300" style="border-radius: 10%; border: none;">
-        <p>
-          I am a recent graduate with a bachelor's degree in data science and geography from the University of Oregon.
-           My studies have helped me develop an appreciation for using technology to solve complex problems and make data driven inferences.
-            In my time at UO I have studied a broad range of topics including machine learning, web-mapping, GIS related analysis, and spatial demography.
-             As I approach graduation this spring, I look forward to using these skills to make differences in my community.
-        </p>
+
+      <div class="button-grid" style="width: 55%; padding-top: 100px;">
+
+        <img src="files/36a_0315.jpeg" alt="Leo Uhlig" width="350", height="350" style="border-radius: 10%; border: none;">
+        
+        <div>
+            <h1 style="margin-top: -10px;">Leo Uhlig</h1>
+            <p>
+            I am a recent graduate with a bachelor's degree in data science and geography from the University of Oregon.
+            My studies have helped me develop an appreciation for using technology to solve complex problems and make data driven inferences.
+                In my time at UO I have studied a broad range of topics including machine learning, web-mapping, GIS related analysis, and spatial demography.
+                As I begin my career, I look forward to using these skills to make differences in my community.
+            </p>
+        </div>
+      </div>
+
+      <div class="contact-panel">
+        <h4>Get in contact with me</h4>
+        <p>EMAIL: leo.r.uhlig@gmail.com | GITHUB: luhlig123</p>
       </div>
 
       <!--EXPLORE MY WORK BUBBLE-->
@@ -48,32 +56,35 @@
       </h3>
 
       <div class="button-grid">
-        <a href="#SpatialDemography" class="grid-button">
+
+        <a href="#SpatialDemography" class="grid-button" style="background-color: #ffffe4;">
             <h2>Spatial Demography</h2>
             <p>Income and Home Values in Portland, Oregon</p>
         </a>
 
-        <a href="#DSCI" class="grid-button">
+        <a href="#DSCI" class="grid-button" style="background-color: #ffffe4;">
             <h2>Data Science</h2>
             <p>Mobile Crisis Response in Eugene, Oregon</p>
         </a>
 
-        <a href="#WebMapping" class="grid-button">
+        <a href="#WebMapping" class="grid-button" style="background-color: #ffffe4;">
             <h2>Web Mapping</h2>
             <p>Portland to Yellowstone</p>
         </a>
 
-        <a href="#MapGallery" class="grid-button">
+        <a href="#MapGallery" class="grid-button" style="background-color: #ffffe4;">
             <h2>Map Gallery</h2>
             <p>Projects and Maps Made with ArcGIS</p>
         </a>
+
+        
 
       </div>     
 
       <!--<hr style="width: 60%; margin: 0 auto; fill: black;">-->
 
       <!--SPATIAL DEMOGRAPHY PORTFOLIO-->
-      <div style="background-color: white;">
+      <div>
       <div class = "portfolio" id="SpatialDemography">
         <h1>
           Spatial Demography
@@ -689,22 +700,19 @@
 
         <h3>
             Suitability Map
-        </h3>
+        </h3>  
         
-        <div class="row">
-            <div class="column">
-                <label class = "zoom-box">
-                    <input type = "checkbox">
-                    <img src="files/map_gallery/EScooter_map.png" alt="E-Scooter Suitability Map" width="100%" class="image-link">
-                </label>
-            </div>
-            <div class="column">
-                <label class = "zoom-box">
-                    <input type = "checkbox">
-                    <img src="files/map_gallery/EScooter_submodels.png" alt="E-Scooter Sub-models" width="100%" class="image-link">
-                </label> 
-            </div>
-        </div>                
+        <div class="button-grid">
+            <label class = "zoom-box">
+                <input type = "checkbox">
+                <img src="files/map_gallery/EScooter_map.png" alt="E-Scooter Suitability Map" width="100%" class="image-link">
+            </label>
+
+            <label class = "zoom-box">
+                <input type = "checkbox">
+                <img src="files/map_gallery/EScooter_submodels.png" alt="E-Scooter Sub-models" width="100%" class="image-link">
+            </label>
+        </div>
 
         <p>
             The map on the left represents the final product of this project. Here, the zones with the high placement suitability
@@ -755,7 +763,15 @@
         <label class = "zoom-box">
             <input type = "checkbox">
             <img src="files/map_gallery/WNF_SearchSuggestions.png" alt="Lost Hiker Search Area Suggestions" width="80%" class="image-link">
-        </label>                  
+        </label> 
+        
+        <p>
+            This map displays the final search suggestions for the lost hiker. here you can see the most optimimal path
+             from the start and goal point in red. Along this path you ca see all of the intersecting roads and trails 
+             in orange in green, as well as nearby waterbodies in blue. While this map is in no way an extensive guide to 
+             possible lost hiker locations, it could potentially serve as a good set of starting points, backed up by spatial
+             data.
+        </p>
 
         <hr style="width: 60%; margin: 0 auto; fill: black;">
         <!--Salem Street Network-->
