@@ -12,6 +12,12 @@
     font-family: "Open Sans";
   }
 
+  img {
+    /*border: 0.75px solid black;
+    background-color: white;
+    border-radius: 20px;*/
+    padding: 10px;
+  }
 
   .Bio {
     display: flexbox;
@@ -21,7 +27,7 @@
     width: 50%;
     margin: 0 auto;
     padding-top: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
   }
 
   .contact-panel {
@@ -50,7 +56,7 @@
   .links {
     position: sticky;
     top: 70px;
-    z-index: 1000;
+    z-index: 10;
 
     border-radius: 20px;
 
@@ -105,6 +111,7 @@
   .content-bubble {
     display: flexbox;
     border: 0.75px solid black;
+    background-color: #faf9f6;
     justify-content: center;
     align-items: center; 
     text-align: center;
@@ -143,9 +150,13 @@
     align-items: center; 
     text-align: center;
     width: 60%;
-    margin: 0 auto;
+    margin: 50px auto;
     padding-top: 50px;
     padding-bottom: 10px;
+    padding-inline: 25px;
+    /*background-color: #faf9f6;*/
+    /*border: 0.75px solid black;*/
+    border-radius: 20px;
   }
 
   .webmap {
@@ -153,8 +164,9 @@
     justify-content: center;
     align-items: center; 
     text-align: center;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    padding: 5px;
     border-radius: 20px;
   }
 
@@ -174,3 +186,49 @@
   .return-button:hover{
     transform: scale(1.025);
   }
+
+
+
+
+  .button-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.grid-button {
+    min-height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #eee;
+    color: #222;
+
+    text-decoration: none;
+    text-align: center;
+
+    border-radius: 10px;
+
+    transition: 0.2s;
+}
+
+.grid-button:hover {
+    transform: translateY(-5px);
+    background-color: #ddd;
+}
+
+.grid-button h2 {
+    margin-bottom: 10px;
+}
+
+.grid-button p {
+    margin: 0;
+}

@@ -5,9 +5,11 @@
     <meta charset='utf-8' />
     <title>Leo Uhlig Personal Website</title>
 
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="files/styles/personal_site_styles.css">
 
   </head>
@@ -31,7 +33,7 @@
         <h1>
           Leo Uhlig
         </h1>
-        <img src="files/36a_0315.jpeg" alt="Leo Uhlig" width="300", height="300" style="border-radius: 10%;">
+        <img src="files/36a_0315.jpeg" alt="Leo Uhlig" width="300", height="300" style="border-radius: 10%; border: none;">
         <p>
           I am a recent graduate with a bachelor's degree in data science and geography from the University of Oregon.
            My studies have helped me develop an appreciation for using technology to solve complex problems and make data driven inferences.
@@ -42,56 +44,36 @@
 
       <!--EXPLORE MY WORK BUBBLE-->
       <h3 class="Bio">
-        Explore My Projects
+        Explore My Projects:
       </h3>
-      <div class = "content-bubble">
-        <div class="row">
 
-          <!--spatial demography-->
-          <div class="column">
-            <div class="image-link">
-              <button class="return-button" onclick="window.location.href='#SpatialDemography';" style="margin-bottom: 10px;">
-                Spatial Demography
-              </button>
-              <a href="#SpatialDemography"><img class = "image-link" src="files/portfolio_figs/portland_income_fig.png" alt="Lost Hiker Search Suggestions" style="width:100%; border-radius:20px;"></a>
-            </div>
-          </div>
+      <div class="button-grid">
+        <a href="#SpatialDemography" class="grid-button">
+            <h2>Spatial Demography</h2>
+            <p>Income and Home Values in Portland, Oregon</p>
+        </a>
 
-          <!--web mapping-->
-          <div class="column">
-            <div class = "image-link">
-              <button class="return-button" onclick="window.location.href='#WebMapping';" style="margin-bottom: 10px;">
-                Web Mapping
-              </button>
-              <a href="#WebMapping"><img class = "image-link" src="files/thumbnails/yellowstone_thumb.png" alt="Lost Hiker Search Suggestions" style="width:100%; border-radius:20px;"></a>
-            </div>
-          </div>
-        
-          <!--data science-->
-          <div class="column">
-            <div class = "image-link">
-              <button class="return-button" onclick="window.location.href='#DSCI';" style="margin-bottom: 10px;">
-                Data Science
-              </button>
-              <a href="#DSCI"><img class = "image-link" src="files/DSCI_410/EPD_SPD_CALL_PROPS.png" alt="Lost Hiker Search Suggestions" style="width:100%; border-radius:20px;"></a>
-            </div>
-          </div>  
+        <a href="#DSCI" class="grid-button">
+            <h2>Data Science</h2>
+            <p>Mobile Crisis Response in Eugene, Oregon</p>
+        </a>
 
-          <!--map gallery-->
-          <div class="column">
-            <div class = "image-link">
-              <button class="return-button" onclick="window.location.href='#MapGallery';" style="margin-bottom: 10px;">
-                Map Gallery
-              </button>
-              <a href="#MapGallery"><img class = "image-link" src="files/map_gallery/WNF_SearchSuggestions.png" alt="Lost Hiker Search Suggestions" style="width:100%; border-radius:20px;"></a>
-            </div>
-          </div>
-        </div>
-      </div>      
+        <a href="#WebMapping" class="grid-button">
+            <h2>Web Mapping</h2>
+            <p>Portland to Yellowstone</p>
+        </a>
+
+        <a href="#MapGallery" class="grid-button">
+            <h2>Map Gallery</h2>
+            <p>Projects and Maps Made with ArcGIS</p>
+        </a>
+
+      </div>     
 
       <!--<hr style="width: 60%; margin: 0 auto; fill: black;">-->
 
       <!--SPATIAL DEMOGRAPHY PORTFOLIO-->
+      <div style="background-color: white;">
       <div class = "portfolio" id="SpatialDemography">
         <h1>
           Spatial Demography
@@ -153,6 +135,7 @@
           while Clark, Skamania, Yamhill, and Columbia County make up the majority of the rural and exurban zones.  
         </p>
       </div>
+      </div>
       
 
       <hr style="width: 70%; margin: 20 auto; fill: black;">
@@ -181,10 +164,12 @@
         Visit the full page here
       </button>
 
-      </div>
+      
       <div class="webmap">
         <iframe class="webmap" name="my-inline-frame" src="https://luhlig123.github.io/WebMapping/final_project/structure/Yellowstone.html" width="100%" height="700" title="Embedded Content"></iframe>
       </div>
+
+    </div>
 
       <div style="padding-bottom: 10px;"></div>
 
