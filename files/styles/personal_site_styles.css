@@ -102,13 +102,19 @@
 
   .navbar details {
     margin-top: 45px;
-    padding-bottom: 10px;
+    padding: 10px;
     color: white;
   }
 
   .navbar details:hover {
     background-color: #111111;
     transform: scale(1.025);
+    border-radius: 50px;
+  }
+
+  .navbar details[open]:hover {
+    transform: scale(1);
+    background-color: #333;
   }
 
   .banner img {

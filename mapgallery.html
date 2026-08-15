@@ -14,7 +14,7 @@
 
   <body>
     <header id="header">
-        <nav class="links">
+        <nav class="navbar">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="files/LEO UHLIG RESUME (9).pdf">CV</a></li>
@@ -24,7 +24,12 @@
             <li><a href="mapgallery.html">Map Gallery</a></li>
           </ul>
         </nav>
-
+      </header>
+    
+      <div class="portfolio" id="MapGallery">
+        <h1>
+            Map Gallery
+        </h1>
         <nav class="links">
             <ul style="background-color: #444;">
                 <li><a href="#E-Scooter">E-Scooter Suitability</a></li>
@@ -32,17 +37,8 @@
                 <li><a href="#Schools">Salem School Network</a></li>
             </ul>
         </nav>
-      </header>
-    
-    <div class="portfolio">
-        <h1>
-            Map Gallery
-        </h1>
         <!--E-scooter-->
-        
-        <button id="E-Scooter" class="return-button" onclick="window.location.href='#header';">Return to Menu</button>
-
-        <h2>
+        <h2 class="map" id="E-Scooter">
             E-Scooter Parking Suitability in Eugene
         </h2>
 
@@ -55,22 +51,19 @@
 
         <h3>
             Suitability Map
-        </h3>
+        </h3>  
         
-        <div class="row">
-            <div class="column">
-                <label class = "zoom-box">
-                    <input type = "checkbox">
-                    <img src="files/map_gallery/EScooter_map.png" alt="E-Scooter Suitability Map" width="100%" class="image-link">
-                </label>
-            </div>
-            <div class="column">
-                <label class = "zoom-box">
-                    <input type = "checkbox">
-                    <img src="files/map_gallery/EScooter_submodels.png" alt="E-Scooter Sub-models" width="100%" class="image-link">
-                </label> 
-            </div>
-        </div>                
+        <div class="button-grid">
+            <label class = "zoom-box">
+                <input type = "checkbox">
+                <img src="files/map_gallery/EScooter_map.png" alt="E-Scooter Suitability Map" width="100%" class="image-link">
+            </label>
+
+            <label class = "zoom-box">
+                <input type = "checkbox">
+                <img src="files/map_gallery/EScooter_submodels.png" alt="E-Scooter Sub-models" width="100%" class="image-link">
+            </label>
+        </div>
 
         <p>
             The map on the left represents the final product of this project. Here, the zones with the high placement suitability
@@ -79,13 +72,12 @@
         </p>
                 
 
-        <hr style="width: 60%; margin: 0 auto; fill: black;">
+        <hr class="divider">
         <!--Lost hiker-->
 
         <br>  
-        <button id="Hiker" class="return-button" onclick="window.location.href='#header';">Return to Menu</button>
 
-        <h2>
+        <h2 class="map" id="Hiker">
             Lost Hiker Search Areas
         </h2>
 
@@ -122,15 +114,22 @@
         <label class = "zoom-box">
             <input type = "checkbox">
             <img src="files/map_gallery/WNF_SearchSuggestions.png" alt="Lost Hiker Search Area Suggestions" width="80%" class="image-link">
-        </label>                  
+        </label> 
+        
+        <p>
+            This map displays the final search suggestions for the lost hiker. here you can see the most optimimal path
+             from the start and goal point in red. Along this path you ca see all of the intersecting roads and trails 
+             in orange in green, as well as nearby waterbodies in blue. While this map is in no way an extensive guide to 
+             possible lost hiker locations, it could potentially serve as a good set of starting points, backed up by spatial
+             data.
+        </p>
 
-        <hr style="width: 60%; margin: 0 auto; fill: black;">
+        <hr class="divider">
         <!--Salem Street Network-->
         
         <br>
-        <button id = "Schools" class="return-button" onclick="window.location.href='#header';">Return to Menu</button>
 
-        <h2>
+        <h2 class="map" id="Schools">
             Salem Middle School Street Networks
         </h2>
         
@@ -161,7 +160,7 @@
     </div>
 
 
-    <hr style="width: 60%; margin: 0 auto; fill: black;">
+    <hr class="divider">
     <div class="contact-panel">
         <h4>Get in contact with me</h4>
         <p>EMAIL: leo.r.uhlig@gmail.com | GITHUB: luhlig123</p>

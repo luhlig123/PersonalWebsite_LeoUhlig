@@ -25,70 +25,73 @@
           <li><a href="mapgallery.html">Map Gallery</a></li>
         </ul>
       </nav>
+
+      <!--
+      <nav class="navbar" style="z-index: 10;">
+        <details>
+          <summary>Projects</summary>
+            <ul>
+              <li><a href="portfolio.html">Spatial Demography Portfolio</a></li>
+              <li><a href="webmapping.html">Webmapping Portfolio</a></li>
+              <li><a href="DSCI.html">Data Science Portfolio</a></li>
+              <li><a href="mapgallery.html">Map Gallery</a></li>
+            </ul>
+        </details>
+      </nav>
+    -->
     </header>
+    <div class="button-grid" style="width: 55%; padding-top: 100px;">
 
-      <div class = "Bio">
-        <h1>
-          Leo Uhlig
-        </h1>
-        <img src="files/36a_0315.jpeg" alt="Leo Uhlig" width="300", height="300" style="border-radius: 10%;">
-        <p>
+      <img src="files/36a_0315.jpeg" alt="Leo Uhlig" width="350", height="350" style="border-radius: 10%; border: none; background-color: #fffff0;">
+      
+      <div>
+          <h1 style="margin-top: -10px;">Leo Uhlig</h1>
+          <p>
           I am a recent graduate with a bachelor's degree in data science and geography from the University of Oregon.
-           My studies have helped me develop an appreciation for using technology to solve complex problems and make data driven inferences.
-            In my time at UO I have studied a broad range of topics including machine learning, web-mapping, GIS related analysis, and spatial demography.
-             As I approach graduation this spring, I look forward to using these skills to make differences in my community.
-        </p>
+          My studies have helped me develop an appreciation for using technology to solve complex problems and make data driven inferences.
+              In my time at UO I have studied a broad range of topics including machine learning, web-mapping, GIS related analysis, and spatial demography.
+              As I begin my career, I look forward to using these skills to make differences in my community.
+          </p>
       </div>
+    </div>
 
-      <h3 class="Bio">
-        Explore My Work
-      </h3>
-      <div class = "content-bubble">
-        <div class="row">
+    <div class="contact-panel">
+      <h4>Get in contact with me</h4>
+      <p>EMAIL: leo.r.uhlig@gmail.com | GITHUB: luhlig123</p>
+    </div>
 
-          <!--SPATIAL DEMOGRAPHY-->
-          <div class="column">
-            <div class="image-link">
-              <button class="return-button" onclick="window.location.href='portfolio.html';" style="margin-bottom: 10px;">
-                Spatial Demography Portfolio
-              </button>
-              <a href="portfolio.html"><img class = "image-link" src="files/portfolio_figs/portland_income_fig.png" alt="Lost Hiker Search Suggestions" style="width:100%; border-radius:20px;"></a>
-            </div>
-          </div>
+    <!--EXPLORE MY WORK BUBBLE-->
+    <h3 class="Bio">
+      Explore My Projects:
+    </h3>
 
-          <!--WEB MAPPING-->
-          <div class="column">
-            <div class = "image-link">
-              <button class="return-button" onclick="window.location.href='webmapping.html';" style="margin-bottom: 10px;">
-                Web Mapping Portfolio
-              </button>
-              <a href="webmapping.html"><img class = "image-link" src="files/thumbnails/yellowstone_thumb.png" alt="Lost Hiker Search Suggestions" style="width:100%; border-radius:20px;"></a>
-            </div>
-          </div>
-        
-          <!--DATA SCIENCE-->
-          <div class="column">
-            <div class = "image-link">
-              <button class="return-button" onclick="window.location.href='DSCI.html';" style="margin-bottom: 10px;">
-                Data Science Portfolio
-              </button>
-              <a href="DSCI.html"><img class = "image-link" src="files/DSCI_410/EPD_SPD_CALL_PROPS.png" alt="Lost Hiker Search Suggestions" style="width:100%; border-radius:20px;"></a>
-            </div>
-          </div>  
+    <div class="button-grid">
 
-          <!--MAP GALLERY-->
-          <div class="column">
-            <div class = "image-link">
-              <button class="return-button" onclick="window.location.href='mapgallery.html';" style="margin-bottom: 10px;">
-                Map Gallery
-              </button>
-              <a href="mapgallery.html"><img class = "image-link" src="files/map_gallery/WNF_SearchSuggestions.png" alt="Lost Hiker Search Suggestions" style="width:100%; border-radius:20px;"></a>
-            </div>
-          </div>
-        </div>
-      </div>      
+      <a href="portfolio.html" class="grid-button" style="background-color: #ffffe4;">
+          <h2>Spatial Demography</h2>
+          <p>Income and Home Values in Portland, Oregon</p>
+      </a>
 
-      <hr style="width: 60%; margin: 0 auto; fill: black;">
+      <a href="DSCI.html" class="grid-button" style="background-color: #ffffe4;">
+          <h2>Data Science</h2>
+          <p>Mobile Crisis Response in Eugene, Oregon</p>
+      </a>
+
+      <a href="webmapping.html" class="grid-button" style="background-color: #ffffe4;">
+          <h2>Web Mapping</h2>
+          <p>Portland to Yellowstone</p>
+      </a>
+
+      <a href="mapgallery.html" class="grid-button" style="background-color: #ffffe4;">
+          <h2>Map Gallery</h2>
+          <p>Projects and Maps Made with ArcGIS</p>
+      </a>
+
+      
+
+    </div>   
+
+      <hr class="divider">
 
       <div class="contact-panel">
         <h4>Get in contact with me</h4>
