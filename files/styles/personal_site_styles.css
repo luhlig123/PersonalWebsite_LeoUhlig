@@ -199,7 +199,7 @@
     width: 100%;
     margin: 0 auto;
     padding: 5px;
-    border-radius: 20px;
+    border-radius: 10px;
   }
 
   .map {
@@ -207,8 +207,8 @@
   }
 
   .return-button{
-    background-color: #ddd;
-    border: none;
+    background-color: #ffffe0;
+    border: dashed black 1.5px;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
@@ -232,9 +232,29 @@
     margin: 5px auto;
     padding: 20px;
 }
-
 .grid-button {
-    min-height: 200px;
+  min-height: 150px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #eee;
+  color: #222;
+
+  border: dashed black 1px;
+
+  text-decoration: none;
+  text-align: center;
+
+  border-radius: 10px;
+
+  transition: 0.2s;
+}
+
+.grid-button-pic {
+    min-height: 400px;
 
     display: flex;
     flex-direction: column;
@@ -254,6 +274,19 @@
     transition: 0.2s;
 }
 
+.grid-button-pic:hover {
+  transform: translateY(-5px);
+  background-color: #ddd;
+}
+
+.grid-button-pic h2 {
+  margin-bottom: 10px;
+}
+
+.grid-button-pic p {
+  margin: 0;
+}
+
 .grid-button:hover {
     transform: translateY(-5px);
     background-color: #ddd;
@@ -268,3 +301,12 @@
 }
 
 
+table {
+  border: solid black 1px;
+}
+th {
+  border: solid black 1px;
+}
+td {
+  border: solid black 1px;
+}
