@@ -52,7 +52,7 @@
              the closure of CAHOOTS in Eugene in 2025. Together, these changes in service fundamentally altered the mechanisms 
              used by citizens of Eugene to access emergency mental health care. Given the magnitude of Eugene’s shift in service 
              and the significant differences between the CAHOOTS and MCSLC models in terms of operation and dispatch procedure, 
-             many questions have been raised regarding what effect these changes have had on the city
+             many questions have been raised regarding what effect these changes have had on the city.
         </p>
 
         <br>
@@ -62,9 +62,9 @@
 
             <br>
             
-            <p>- How have call volumes and proportions historically been  distributed between the EPD/SPD, CAHOOTS, and MCSLC?</p>
+            <p>- How have volumes and proportions of calls historically been distributed between the Eugene and Springfield Police Departments(EPD/SPD), CAHOOTS, and MCSLC?</p>
             
-            <p>- What effect did the closure of CAHOOTS in Eugene have on these volumes and proportions?</p>
+            <p>- What effect did the closure of CAHOOTS in Eugene have on the volumes and proportions of emergency calls recieved?</p>
             
             <p>- How were the volumes and proportions of the most common call types handled by CAHOOTS impacted by the closure?</p>
         </div>
@@ -72,10 +72,10 @@
         
         <p>
             By analyzing call volumes and proportions it is possible to investigate how the public has responded 
-            to this change in service. Taking into account how rapid the transition from CAHOOTS to MCSLC has been, 
+            to the change in service. Taking into account the rapid nature of the transition from CAHOOTS to MCSLC, 
             it is critical to understand how the public has reacted to the change and if an acceptable form of alternative 
-            care is still present in Eugene. Understanding this transition can help build an understanding of what is currently 
-            working well and where areas that need improvement might be.
+            care is still present in Eugene. Understanding this transition can help build an understanding of what aspects of Eugene's mobile 
+            crisis response are currently functioning as intended and what areas are in need of improvement.
         </p>
 
         <br>
@@ -99,7 +99,7 @@
         <div class="row">
             <div class="column">
                 <h4>
-                    Eugene CAD Data:
+                    Eugene Commputer Aided Dispatch (CAD):
                 </h4>
 
                 <p>
@@ -132,11 +132,11 @@
         <div class="row">
             <div class="column" style="padding-inline: 25%;">
                 <h4>
-                    MCSLC Calls: 
+                    MCSLC Dispatch Calls: 
                 </h4>
 
                 <p>
-                    This dataset will provide information on calls made to MCSLC from 2024 to 2025. 
+                    This dataset provides information on calls requesting service from MCSLC between 2024 and 2025. 
                     information on call times and call types will be used to analyze call volumes in Eugene and Springfield.
                 </p>
                 <p>
@@ -151,79 +151,82 @@
 
         
     <div class="portfolio">
-            <h3>
-                Data Preperation and Cleaning
-            </h3>
+        <h2>Methods</h2>
+        <div class="button-grid" style="width: 100%;">
+            <div>
+                <h3>
+                    Data Preperation and Cleaning
+                </h3>
 
-            <p>
-                1. Read each dataset into a jupyter notebook as a data frame <br><br><br>
+                <p>
+                    1. Read each dataset into a jupyter notebook as a data frame <br><br><br>
 
-                2. Create a simplified date column for the three data frames that represent the year and month of every call recorded (ex. 2022-03). 
-                This will make aggregation easier during the following steps <br><br><br>
+                    2. Create a simplified date column for the three data frames that represent the year and month of every call recorded (ex. 2022-03). 
+                    This will make aggregation easier during the following steps <br><br><br>
 
-                3. Subset MCSLC data into Eugene and Springfield dataframes using the “City” column variables. <br><br><br>
+                    3. Subset MCSLC data into Eugene and Springfield dataframes using the “City” column variables. <br><br><br>
 
-                4. Use known CAHOOTS unit codes to subset the Eugene and Springfield emergency call data frames into EPD, SPD, and CAHOOTS data frames. <br><br><br>
+                    4. Use known CAHOOTS unit codes to subset the Eugene and Springfield emergency call data frames into EPD, SPD, and CAHOOTS data frames. <br><br><br>
 
-                5. Group the CAHOOTS dataframes by call type and sort by count to identify the most commonly occurring call types. <br><br><br>
+                    5. Group the CAHOOTS dataframes by call type and sort by count to identify the most commonly occurring call types. <br><br><br>
 
-                6. Create total monthly call volume data frames for Eugene and Springfield <br><br><br>
+                    6. Create total monthly call volume data frames for Eugene and Springfield <br><br><br>
 
-                7. Use the values in the monthly call volume data frames to calculate the proportion of monthly calls handled by each agency in each city. <br><br><br>
-            </p>
+                    7. Use the values in the monthly call volume data frames to calculate the proportion of monthly calls handled by each agency in each city. <br><br><br>
+                </p>
+            </div>
 
         <!--METHODS SETCTION-->
 
-        <h2>
-            Methods
-        </h2>
+        <div>
+            <h3>
+                Initial Visualization and Exploratory Analysis           
+            </h3>
+            <p>
+                1. Create visualizations of overall trends in volume and proportion across cities and agencies using seaborn and matplotlib. <br><br>
 
-        <h3>
-            Initial Visualization and Exploratory Analysis           
-        </h3>
-        <p>
-            1. Create visualizations of overall trends in volume and proportion across cities and agencies using seaborn and matplotlib. <br><br>
+                2. Create visualizations of agency specific trends in both cities <br><br>
 
-            2. Create visualizations of agency specific trends in both cities <br><br>
+                3. Create call type specific plots to show trends across cities <br><br>
+            </p>
 
-            3. Create call type specific plots to show trends across cities <br><br>
-        </p>
+            <h3>
+                Overall Difference in Differences for EPD/SPD and MCSLC
+            </h3>
 
-        <h3>
-            Overall Difference in Differences for EPD/SPD and MCSLC
-        </h3>
+            <p>
+                For each agency pair (EPD/SPD, MCSLC in Eugene/Springfield): <br><br>
 
-        <p>
-            For each agency pair (EPD/SPD, MCSLC in Eugene/Springfield): <br><br>
+                1. Check for parallel trends <br><br>
 
-            1. Check for parallel trends <br><br>
+                2. Assign treated and post variables <br><br>
 
-            2. Assign treated and post variables <br><br>
+                3. Fit DiD models using statsmodel <br><br>
 
-            3. Fit DiD models using statsmodel <br><br>
+                4. Assess the statistical significance of the model based its p-values <br><br>
 
-            4. Assess the statistical significance of the model based its p-values <br><br>
+                5. Create visualizations <br><br>
+            </p>
 
-            5. Create visualizations <br><br>
-        </p>
+            <h3>
+                Call Type Specific Difference in Differences
+            </h3>
 
-        <h3>
-            Call Type Specific Difference in Differences
-        </h3>
+            <p>
+                For each common call type (Check Welfare, Public Assist, Suicidal Subject, Intoxicated Subject, Transport): <br><br>
 
-        <p>
-            For each common call type (Check Welfare, Public Assist, Suicidal Subject, Intoxicated Subject, Transport): <br><br>
+                1. Check for parallel trends <br><br>
 
-            1. Check for parallel trends <br><br>
+                2. Assign treated and post variables <br><br>
 
-            2. Assign treated and post variables <br><br>
+                3. Fit DiD models using statsmodel <br><br>
 
-            3. Fit DiD models using statsmodel <br><br>
+                4. Assess the statistical significance of the model based its p-values <br><br>
 
-            4. Assess the statistical significance of the model based its p-values <br><br>
-
-            5. Create visualizations <br><br>
-        </p>
+                5. Create visualizations <br><br>
+            </p>
+        </div>
+    </div>
 
         <!--RESULTS SETCTION-->
 
